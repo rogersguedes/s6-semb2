@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Linguagens E Autômatos}
+
+\begin{document}
+
+\maketitle
+\section{Sistema de Eventos Discretos}
+Um \textbf{sistema} é uma combinação de componente que juntos executam uma função as quais não são capazes de realizar quando separados.
+\subsection{Sistema de Evento Discreto}
+Um \textbf{Evento} é pode ser classificado como uma situação localizada em um ponto específico do espaço e do tempo e um \textbf{Sistema de Evento Discreto} (SED) é um sistema cujas entradas e saídas são formadas por um conjunto finito de estados e eventos.
+
+O Sistemas de Evento Discreto pode sem subdivididos em Estáticos e Dinâmicos. Os \textbf{Sistemas Estáticos de Evento Discreto} (SEED) são aqueles em que o estado a ser alcançado após um evento \textbf{não depende} do estado atual. Enquanto, os \textbf{Sistemas Dinâmicos de Evento Discreto} (SDED) são aqueles em que o estado a ser alcançado após um evento \textbf{depende} do estado atual.
+
+No nosso caso, focaremos nos Sistemas Dinâmicos de Evento Discreto e o instante de tempo e o espaço em que o evento ocorre não será importante, pois, nos preocuparemos apenas com as ações do evento.
+\subsection{Linguagem}
+\subsubsection{Alfabeto (E)}
+O alfabeto `E' é o conjunto de Eventos tratados dentro de um SED.
+
+Ex: $E_1=\{a,b,c\}$
+\subsubsection{Palavras ou Strings}
+Uma palavra, ou String, é uma possível sequencia de eventos em um SED.
+
+Ex: ab,ac,cb,acb,aab,abb,acb...
+\subsubsection{Linguagem}
+Uma Linguagem é o conjunto das possíveis Palavras que podem ocorrer em um SED.
+
+Ex: $L_1=\{ab,ac,cb,acb,aab,abb,acb\}$
+\section{Autômatos}
+Um \textbf{Autômato} é um modelo matemático que descreve o funcionamento de um Sistema Dinâmico de Evento Discreto.
+\subsection{Elementos de um Autômato}
+Um Autômato é formado por um Conjunto finito de Estados `X e Linguagem `L'.
+\section{Operações}
+\subsection{Concatenação}
+Dados duas strings `u' e `v' quaisquer, a concatenação deles resulta em uma nova string `uv' que representa o conjunto dos eventos de `u' imediatamente seguido pelo conjunto dos eventos de `v'. Ex:
+
+u=`abc';
+
+v=`def'; 
+
+uv=`abcdef'; 
+\subsubsection{Elemento Identidade {\large$\varepsilon$}}
+O operador \large{$\varepsilon$} aplicado à uma string `u' qualquer é tal que:
+$$
+\varepsilon u=u\varepsilon =u
+$$
+
+\end{document}
